@@ -1,0 +1,5 @@
+ - Сайт, наглядно объясняющий, что такое DFT, дискретное преобразование Фурье: https://www.jezzamon.com/fourier/index.html
+ - Видеоролики, не менее наглядно объясняющие, что такое DFT, дискретное преобразование Фурье:
+   - https://www.youtube.com/watch?v=r6sGWTCMz2k
+   - https://www.youtube.com/watch?v=spUNpyF58BY
+ - Анализатор сигнала с микрофона: https://www.compadre.org/osp/pwa/soundanalyzer/
