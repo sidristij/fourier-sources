@@ -14,6 +14,10 @@
  - Юрий Ткач, Сервис запуска потоков - Concurrency #3 - Advanced Java: https://www.youtube.com/watch?v=jFKrnW5ElMg
  - Алексей Шипилёв, Fork Join pool, особенности реализации: https://www.youtube.com/watch?v=_2ciDWeeXJQ
 
+## Как менять свойства .NET ThreadPool
+
+В startup проекте поменять
+
 ```
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -29,8 +33,8 @@
     <ItemGroup>
         
         <!-- Common settings -->
-        <RuntimeHostConfigurationOption Include="System.Threading.ThreadPool.MinThreads" Value="1" /> <!-- if 0, -> ProcessorCount -->
-        <RuntimeHostConfigurationOption Include="System.Threading.ThreadPool.MaxThreads" Value="12" /> <!-- if 0, -> short.MaxValue -->
+        <RuntimeHostConfigurationOption Include="System.Threading.ThreadPool.MinThreads" Value="0" /> <!-- if 0, -> ProcessorCount -->
+        <RuntimeHostConfigurationOption Include="System.Threading.ThreadPool.MaxThreads" Value="0" /> <!-- if 0, -> short.MaxValue -->
         
         <!-- Regulatins -->
         <RuntimeHostConfigurationOption Include="System.Threading.ThreadPool.Blocking.CooperativeBlocking" Value="true" />
